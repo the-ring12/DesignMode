@@ -21,8 +21,7 @@ public class XMLUtil {
             // 获取包含类名的文本结点
             NodeList nodeList = document.getElementsByTagName("chartType");
             Node classNode = nodeList.item(0).getFirstChild();
-            String chartType = classNode.getNodeValue().trim();
-            return chartType;
+            return classNode.getNodeValue().trim();
         } catch (Exception e) {
             e.printStackTrace();
             return null;
@@ -41,12 +40,10 @@ public class XMLUtil {
             // 获取包含类名的文本结点
             NodeList nodeList = document.getElementsByTagName("className");
             Node classNode = nodeList.item(0).getFirstChild();
-            String cName = classNode.getNodeName();
-
+            String cName = classNode.getNodeValue();
             // 通过类名生成实例对象并将其返回
             Class c = Class.forName(cName);
-            Object obj = c.newInstance();
-            return obj;
+            return c.newInstance();
         } catch (Exception e) {
             e.printStackTrace();
             return null;
