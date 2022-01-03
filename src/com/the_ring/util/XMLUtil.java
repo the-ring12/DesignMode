@@ -16,10 +16,10 @@ public class XMLUtil {
             DocumentBuilderFactory builderFactory = DocumentBuilderFactory.newInstance();
             DocumentBuilder builder = builderFactory.newDocumentBuilder();
             Document document;
-            document = builder.parse("src//con//the_ring//" + packageName + "//config.xml");
+            document = builder.parse("src//com//the_ring//" + packageName + "//config.xml");
 
             // 获取包含类名的文本结点
-            NodeList nodeList = document.getElementsByTagName("className");
+            NodeList nodeList = document.getElementsByTagName("chartType");
             Node classNode = nodeList.item(0).getFirstChild();
             String chartType = classNode.getNodeValue().trim();
             return chartType;
@@ -36,7 +36,7 @@ public class XMLUtil {
             DocumentBuilderFactory builderFactory = DocumentBuilderFactory.newInstance();
             DocumentBuilder builder = builderFactory.newDocumentBuilder();
             Document document;
-            document = builder.parse("src//con//the_ring//" + packageName + "//config.xml");
+            document = builder.parse("src//com//the_ring//" + packageName + "//config.xml");
 
             // 获取包含类名的文本结点
             NodeList nodeList = document.getElementsByTagName("className");
