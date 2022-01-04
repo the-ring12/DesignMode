@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<config>
+    <!-- RefinedAbstraction -->
+    <className>com.ring.bridge.JpgImage</className>
+    <!-- ConcreteImplementor -->
+    <className>com.ring.bridge.WindowsImp</className>
+</config>
