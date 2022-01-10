@@ -1,7 +1,15 @@
 package com.ring.simplefactory;
 
+/**
+ * @author Tan
+ */
 public class ChartFactory {
-    // 静态工厂方法
+    /**
+     * 静态工厂方法
+     *
+     * @param type
+     * @return
+     */
     public static Chart getChart(String type) {
         Chart chart = null;
         if (type.equals("histogram")) {
